@@ -70,7 +70,7 @@ header {
     .critic-box {
       width: 350px;
       height: 234px;
-      margin-left: 200px; /* 좌측 여백을 20px 늘림 */
+      margin-left: 120px; /* 좌측 여백을 20px 늘림 */
     }
   
      /* 평론가 섹션의 간격 조정 */
