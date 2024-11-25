@@ -7,14 +7,14 @@ body {
 
 .dark-mode {
   background-color: #121212;
-  color: #E3E4F1;
+  color: #e3e4f1;
 }
 
 .background {
   width: 100%;
-  background-size : cover;
+  background-size: cover;
   height: 300px;
-  background-image: url('../assets/bg-desktop-light.jpg');
+  background-image: url("../assets/bg-desktop-light.jpg");
   position: absolute;
   top: 0;
   left: 0;
@@ -22,7 +22,7 @@ body {
 }
 
 .title {
-  color: #FFF;
+  color: #fff;
   font-family: "Josefin Sans";
   font-size: 40px;
   font-weight: 700;
@@ -50,12 +50,12 @@ body {
   margin-bottom: 24px;
 }
 
-.rectangle{
+.rectangle {
   width: 540px;
   height: 64px;
   border-radius: 5px;
-  background: #FFF;
-  box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.50);
+  background: #fff;
+  box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
   display: flex;
   align-items: center;
   padding-left: 24px;
@@ -64,16 +64,17 @@ body {
 .task-rectangle {
   width: 515px;
   border-radius: 5px;
-  background: #FFF;
-  box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.50);
+  background: #fff;
+  box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
   align-items: center;
   padding-left: 24px;
   padding-right: 24px;
 }
 
-.dark-mode .rectangle, .dark-mode .task-rectangle {
+.dark-mode .rectangle,
+.dark-mode .task-rectangle {
   background: #333;
-  box-shadow: 0px 35px 50px -15px rgba(0, 0, 0, 0.50);
+  box-shadow: 0px 35px 50px -15px rgba(0, 0, 0, 0.5);
 }
 
 .group-input {
@@ -82,7 +83,7 @@ body {
   width: 100%;
   font-family: "Josefin Sans";
   font-size: 18px;
-  color: #494C6B;
+  color: #494c6b;
   background: none;
   padding-left: 24px;
 }
@@ -93,7 +94,7 @@ body {
   width: 100%;
   font-family: "Josefin Sans";
   font-size: 18px;
-  color: #FFF;
+  color: #fff;
   background: none;
   padding-left: 24px;
 }
@@ -102,7 +103,7 @@ body {
   margin-bottom: 16px; /* Space between task list and items left + filters */
 }
 
-.filter{
+.filter {
   justify-content: center;
 }
 
@@ -127,7 +128,7 @@ body {
 }
 
 .task-text {
-  color: #494C6B;
+  color: #494c6b;
   font-family: "Josefin Sans";
   font-size: 18px;
   font-style: normal;
@@ -140,7 +141,7 @@ body {
 
 .task.completed .task-text {
   text-decoration: line-through;
-  color: #9495A5;
+  color: #9495a5;
 }
 
 .task-delete {
@@ -152,37 +153,37 @@ body {
   display: inline;
 }
 
-.clear-completed:hover, .filter:hover {
-  color: #3A7CFD;
+.clear-completed:hover,
+.filter:hover {
+  color: #3a7cfd;
 }
 
 .task-check:hover {
-  border: 2px solid #55DDFF; /* 테두리만 색상으로 변경 */
+  border: 2px solid #55ddff; /* 테두리만 색상으로 변경 */
   background-color: transparent; /* 배경은 투명하게 유지 */
   border-radius: 20px; /* 테두리의 모양을 유지 */
   padding: 2px; /* 내부 여백을 약간 추가하여 테두리가 더 뚜렷하게 보이도록 */
 }
 
-
 /* Dark mode specific styles */
 .dark-mode .background {
-  background-image: url('../assets/bg-desktop-dark.jpg');
+  background-image: url("../assets/bg-desktop-dark.jpg");
 }
 
 .dark-mode .task-text {
-  color: #E3E4F1;
+  color: #e3e4f1;
 }
 
 /* Task Info - Items left and Clear Completed */
 .task-info {
-  align-items: center;/* Adds space between task list and filter group */
+  align-items: center; /* Adds space between task list and filter group */
 }
 
 /* Filter Group - Positioned below the task-info */
 .filter-group {
-  display: flex;/* Adds space between each filter */
-  width: 100%; /* Ensures the filters take full width *//* Adds space between filters and reorder text */
-  color: #9495A5;
+  display: flex; /* Adds space between each filter */
+  width: 100%; /* Ensures the filters take full width */ /* Adds space between filters and reorder text */
+  color: #9495a5;
   font-family: "Josefin Sans";
   font-size: 14px;
   font-style: normal;
@@ -193,40 +194,40 @@ body {
 }
 
 /* Items Left and Clear Completed */
-.items-left{
+.items-left {
   display: flex;
   font-size: 14px;
   cursor: pointer;
-  color: #9495A5;
+  color: #9495a5;
   justify-content: center;
   margin-right: auto;
 }
-.clear-completed{
+.clear-completed {
   display: flex;
   font-size: 14px;
   cursor: pointer;
-  color: #9495A5;
+  color: #9495a5;
   justify-content: center;
   margin-left: auto;
 }
 /* Hover effect for clear completed and filter buttons */
-.clear-completed:hover{
-  color: #494C6B;
+.clear-completed:hover {
+  color: #494c6b;
 }
-.dark-mode .clear-completed:hover{
-  color: #E3E4F1;
+.dark-mode .clear-completed:hover {
+  color: #e3e4f1;
 }
 .filter:hover {
-  color: #494C6B;
+  color: #494c6b;
   font-weight: 700;
 }
 .dark-mode .filter:hover {
-  color: #E3E4F1;
+  color: #e3e4f1;
 }
 
 /* Position the "Drag and drop to reorder list" text */
 .reorder-text {
-  color: #9495A5;
+  color: #9495a5;
   text-align: center;
   font-family: "Josefin Sans";
   font-size: 14px;
@@ -258,7 +259,7 @@ body {
 
 /* Dark mode icon-cross SVG color */
 .dark-mode .task-delete path {
-  fill: #5B5E7E; /* 다크모드에서 아이콘 색상 변경 */
+  fill: #5b5e7e; /* 다크모드에서 아이콘 색상 변경 */
 }
 
 /* Optional: You can also style the .task-delete-wrapper to control the layout if needed */
@@ -275,7 +276,7 @@ body {
 .task-divider {
   width: 563px;
   height: 1px;
-  background: #E3E4F1;
+  background: #e3e4f1;
   margin: 0 -24px; /* Offsets the padding of .task-rectangle */
   flex-shrink: 0;
 }
@@ -283,33 +284,30 @@ body {
 .dark-mode .task-divider {
   width: 563px;
   height: 1px;
-  background: #393A4B;
+  background: #393a4b;
   margin: 0 -24px;
   flex-shrink: 0;
 }
 
-
 /* Default color for all filter buttons */
 .filter {
-  color: #9495A5; /* This color is neutral until a filter is active */
+  color: #9495a5; /* This color is neutral until a filter is active */
   font-weight: normal;
   cursor: pointer;
 }
 
 /* Active filter button styling for both light and dark modes */
 .filter.active {
-  color: #3A7CFD;
+  color: #3a7cfd;
   font-weight: 700;
 }
 
 .dark-mode .circle-icon img {
-  filter: invert(22%) sepia(15%) saturate(39%) hue-rotate(18deg) brightness(9%) contrast(70%);
+  filter: invert(22%) sepia(15%) saturate(39%) hue-rotate(18deg) brightness(9%)
+    contrast(70%);
 }
 
 /* Dark mode fill color */
 .dark-mode .task-check circle {
-  fill: #393A4B; /* Dark mode checkbox color */
+  fill: #393a4b; /* Dark mode checkbox color */
 }
-
-
-
