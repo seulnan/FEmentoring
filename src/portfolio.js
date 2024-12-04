@@ -120,9 +120,7 @@ https://fontawesome.com/icons?d=gallery */
   display: true // Set false to hide this section, defaults to true
 };
 
-// Education Section
-
-const educationInfo = {
+const menteeInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
@@ -436,7 +434,7 @@ export {
   socialMediaLinks,
   splashScreen,
   skillsSection,
-  educationInfo,
+  menteeInfo,
   workExperiences,
   openSource,
   bigProjects,

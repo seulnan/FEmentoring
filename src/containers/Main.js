@@ -8,7 +8,7 @@ import StartupProject from "./StartupProjects/StartupProject";
 import Achievement from "./achievement/Achievement";
 import Blogs from "./blogs/Blogs";
 import Footer from "../components/footer/Footer";
-import Education from "./education/Education";
+import MenteeInfo from "./menteeInfo/menteeInfo";
 import ScrollToTopButton from "./topbutton/Top";
 import Profile from "./profile/Profile";
 import SplashScreen from "./splashScreen/SplashScreen";
@@ -52,7 +52,7 @@ const Main = () => {
             {/* 멘토소개문구 */}
               <Skills />
               {/* 멘티소개문구 */}
-            <Education />
+            <MenteeInfo />
             <WorkExperience />
             <Projects />
             <StartupProject />

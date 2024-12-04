@@ -32,7 +32,7 @@ Created something awesome for your fork of the portfolio and want to share it? F
 ## Portfolio Sections
 ✔️ Summary and About me\
 ✔️ Skills\
-✔️ Education\
+✔️ menteeInfo\
 ✔️ Work Experience\
 ✔️ Open Source Projects Connected with GitHub\
 ✔️ Big Projects\
@@ -260,7 +260,7 @@ For more information, read [hosting on Netlify](https://create-react-app.dev/doc
 ## For the Future
 If you can help us with these. Please don't hesitate to open a [pull request](https://github.com/saadpasta/developerFolio/pulls).
 
-- Connect with LinkedIn to get Summary, Skills, Education and Experience
+- Connect with LinkedIn to get Summary, Skills, menteeInfo and Experience
 
 - Move to Gatsby
 

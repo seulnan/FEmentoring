@@ -1,9 +1,9 @@
 import React, {createRef, useContext} from "react";
 import {Fade, Slide} from "react-reveal";
-import "./EducationCard.scss";
+import "./menteeInfoCard.scss";
 import StyleContext from "../../contexts/StyleContext";
 
-export default function EducationCard({school}) {
+export default function MenteeInfoCard({school}) {
   const imgRef = createRef();
 
   const GetDescBullets = ({descBullets}) => {
@@ -18,31 +18,31 @@ export default function EducationCard({school}) {
   const {isDark} = useContext(StyleContext);
 
   if (!school.logo)
-    console.error(`Image of ${school.name} is missing in education section`);
+    console.error(`Image of ${school.name} is missing in menteeInfo section`);
   return (
     <div>
       <Fade left duration={1000}>
-        <div className="education-card">
+        <div className="menteeInfo-card">
           {school.logo && (
-            <div className="education-card-left">
+            <div className="menteeInfo-card-left">
               <img
                 crossOrigin={"anonymous"}
                 ref={imgRef}
-                className="education-roundedimg"
+                className="menteeInfo-roundedimg"
                 src={school.logo}
                 alt={school.schoolName}
               />
             </div>
           )}
-          <div className="education-card-right">
-            <h5 className="education-text-school">{school.schoolName}</h5>
+          <div className="menteeInfo-card-right">
+            <h5 className="menteeInfo-text-school">{school.schoolName}</h5>
 
-            <div className="education-text-details">
+            <div className="menteeInfo-text-details">
               <h5
                 className={
                   isDark
-                    ? "dark-mode education-text-subHeader"
-                    : "education-text-subHeader"
+                    ? "dark-mode menteeInfo-text-subHeader"
+                    : "menteeInfo-text-subHeader"
                 }
               >
                 {school.subHeader}
@@ -50,12 +50,12 @@ export default function EducationCard({school}) {
               <p
                 className={`${
                   isDark ? "dark-mode" : ""
-                } education-text-duration`}
+                } menteeInfo-text-duration`}
               >
                 {school.duration}
               </p>
-              <p className="education-text-desc">{school.desc}</p>
-              <div className="education-text-bullets">
+              <p className="menteeInfo-text-desc">{school.desc}</p>
+              <div className="menteeInfo-text-bullets">
                 <ul>
                   <GetDescBullets descBullets={school.descBullets} />
                 </ul>
@@ -65,7 +65,7 @@ export default function EducationCard({school}) {
         </div>
       </Fade>
       <Slide left duration={2000}>
-        <div className="education-card-border"></div>
+        <div className="menteeInfo-card-border"></div>
       </Slide>
     </div>
   );
