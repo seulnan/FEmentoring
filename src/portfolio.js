@@ -48,15 +48,15 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "멘토 김난슬소개",
+  subTitle: "미친 개발자",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "목표 1"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("목표2"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "목표 3"
     )
   ],
 
@@ -126,46 +126,62 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
+      schoolName: "김세훈",
       logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      subHeader: "한줄소개",
+      duration: "한줄소감",
+      desc: "이번 멘토링을 통해 얻은것",
+      descBullets: ["얻은것 1", "얻은것 2", "얻은것 3"]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
-    }
+      schoolName: "김소현",
+      logo: require("./assets/images/harvardLogo.png"),
+      subHeader: "한줄소개",
+      duration: "한줄소감",
+      desc: "이번 멘토링을 통해 얻은것",
+      descBullets: ["얻은것 1", "얻은것 2", "얻은것 3"]
+    },
+    {
+      schoolName: "송은서",
+      logo: require("./assets/images/harvardLogo.png"),
+      subHeader: "한줄소개",
+      duration: "한줄소감",
+      desc: "이번 멘토링을 통해 얻은것",
+      descBullets: ["얻은것 1", "얻은것 2", "얻은것 3"]
+    },
+    {
+      schoolName: "윤승주",
+      logo: require("./assets/images/harvardLogo.png"),
+      subHeader: "한줄소개",
+      duration: "한줄소감",
+      desc: "이번 멘토링을 통해 얻은것",
+      descBullets: ["얻은것 1", "얻은것 2", "얻은것 3"]
+    },
+    {
+      schoolName: "이가은",
+      logo: require("./assets/images/harvardLogo.png"),
+      subHeader: "한줄소개",
+      duration: "한줄소감",
+      desc: "이번 멘토링을 통해 얻은것",
+      descBullets: ["얻은것 1", "얻은것 2", "얻은것 3"]
+    },
+    {
+      schoolName: "임정후",
+      logo: require("./assets/images/harvardLogo.png"),
+      subHeader: "한줄소개",
+      duration: "한줄소감",
+      desc: "이번 멘토링을 통해 얻은것",
+      descBullets: ["얻은것 1", "얻은것 2", "얻은것 3"]
+    },
+    {
+      schoolName: "장태빈",
+      logo: require("./assets/images/harvardLogo.png"),
+      subHeader: "한줄소개",
+      duration: "한줄소감",
+      desc: "이번 멘토링을 통해 얻은것",
+      descBullets: ["얻은것 1", "얻은것 2", "얻은것 3"]
+    },
   ]
-};
-
-// Your top 3 proficient stacks/tech experience
-
-const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
-  experience: [
-    {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
-    },
-    {
-      Stack: "Backend",
-      progressPercentage: "70%"
-    },
-    {
-      Stack: "Programming",
-      progressPercentage: "60%"
-    }
-  ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
 // Work experience section
@@ -174,10 +190,10 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
+      role: "깃허브 컨벤션설명",
+      company: "깃허브 컨벤션",
       companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
+      date: "깃허브컨벤션목적",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -185,17 +201,17 @@ const workExperiences = {
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
+      role: "코드리뷰설명",
+      company: "코드리뷰",
       companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
+      date: "코드리뷰목적",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
+      role: "개발블로그작성설명",
+      company: "개발블로그작성",
       companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
+      date: "개발블로그작성목적",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
   ]
@@ -212,12 +228,12 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Basic 작업물",
+  subtitle: "HTML, CSS, JAVASCRIPT을 이용하여 만든 페이지",
   projects: [
     {
       image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
+      projectName: "레이아웃페이지",
       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       footerLink: [
         {
@@ -229,7 +245,18 @@ const bigProjects = {
     },
     {
       image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
+      projectName: "레시피페이지",
+      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "http://nextu.se/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/nextuLogo.webp"),
+      projectName: "투두리스트",
       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       footerLink: [
         {
@@ -246,15 +273,13 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+  title: emoji("리액트프로젝트"),
+  subtitle: "리액트를 이용하여 만든 페이지",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
+      title: "틱택톡게임",
+      subtitle: "틱택톡게임소개페이지설명",
       image: require("./assets/images/codeInLogo.webp"),
       imageAlt: "Google Code-In Logo",
       footerLink: [
@@ -273,9 +298,29 @@ const achievementSection = {
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "영화소개",
+      subtitle: "영화소개페이지설명",
+      image: require("./assets/images/codeInLogo.webp"),
+      imageAlt: "Google Code-In Logo",
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+        },
+        {
+          name: "Award Letter",
+          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+        },
+        {
+          name: "Google Code-in Blog",
+          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+        }
+      ]
+    },
+    {
+      title: "가계도페이지",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
+        "가계도페이지설명",
       image: require("./assets/images/googleAssistantLogo.webp"),
       imageAlt: "Google Assistant Action Logo",
       footerLink: [
@@ -287,8 +332,8 @@ const achievementSection = {
     },
 
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
+      title: "씨즌넷웹리뉴얼설명",
+      subtitle: "씨즌넷웹리뉴얼설명",
       image: require("./assets/images/pwaLogo.webp"),
       imageAlt: "PWA Logo",
       footerLink: [
@@ -308,7 +353,7 @@ const achievementSection = {
 const blogSection = {
   title: "Blogs",
   subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
+    "우리들의 발자취",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
@@ -369,9 +414,9 @@ const resumeSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("우리들 깃허브"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
+    "개인 깃허브링크",
   number: "+92-0000000000",
   email_address: "saadpasta70@gmail.com"
 };
@@ -392,7 +437,6 @@ export {
   splashScreen,
   skillsSection,
   educationInfo,
-  techStack,
   workExperiences,
   openSource,
   bigProjects,

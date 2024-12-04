@@ -7,7 +7,7 @@ import {
   greeting,
   workExperiences,
   skillsSection,
-  openSource,
+  educationInfo,
   blogSection,
   talkSection,
   achievementSection,
@@ -17,8 +17,8 @@ import {
 function Header() {
   const {isDark} = useContext(StyleContext);
   const viewExperience = workExperiences.display;
-  const viewOpenSource = openSource.display;
   const viewSkills = skillsSection.display;
+  const viewEducationInfo = educationInfo.display;
   const viewAchievement = achievementSection.display;
   const viewBlog = blogSection.display;
   const viewTalks = talkSection.display;
@@ -46,14 +46,14 @@ function Header() {
               <a href="#skills">Skills</a>
             </li>
           )}
-          {viewExperience && (
+          {viewEducationInfo && (
             <li>
-              <a href="#experience">Work Experiences</a>
+              <a href="#education">introduce menti</a>
             </li>
           )}
-          {viewOpenSource && (
+          {viewExperience && (
             <li>
-              <a href="#opensource">Open Source</a>
+              <a href="#experience">convention</a>
             </li>
           )}
           {viewAchievement && (
