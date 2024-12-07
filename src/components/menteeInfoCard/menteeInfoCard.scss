@@ -11,6 +11,11 @@
   &:hover {
     transform: translateX(-10px); /* 호버 시 왼쪽으로 이동 */
   }
+  /* Hover 시 버튼 표시 */
+  &:hover .view-work-section {
+    opacity: 1;
+    right: 0; /* 카드 오른쪽에 나타남 */
+  }
 
   /* 카드 오른쪽 작업물 보기 섹션 */
   .view-work-section {
@@ -35,12 +40,6 @@
         text-decoration: underline;
       }
     }
-  }
-
-  /* 호버 시 작업물 보기 섹션 활성화 */
-  &:hover .view-work-section {
-    opacity: 1;
-    right: 0; /* 카드와 같은 라인으로 이동 */
   }
 }
 
@@ -77,13 +76,11 @@
 }
 
 .menteeInfo-text-details {
-  margin-top: 10px;
-
   .menteeInfo-text-subHeader {
     color: $textColor;
     font-size: 18px;
     font-weight: bold;
-    margin: 5px 0;
+    margin: 12px 0;
   }
 
   .menteeInfo-text-duration {
@@ -94,12 +91,13 @@
 
   .menteeInfo-text-desc {
     color: $talkCardSubTitle;
+    font-size: 18px;
     margin-top: 10px;
   }
 
   .menteeInfo-text-bullets 
   {
-    margin-top: 10px;
+    // margin-top: 10px;
 
     ul {
       padding-left: 20px;

@@ -26,6 +26,7 @@ export default function MenteeInfoCard({school}) {
   return (
     <div>
       <Fade left duration={1000}>
+        {/* Hover 이벤트에 따라 버튼 표시 */}
         <div className="menteeInfo-card">
           {school.logo && (
             <div className="menteeInfo-card-left">
@@ -66,7 +67,7 @@ export default function MenteeInfoCard({school}) {
             </div>
           </div>
 
-          {/* 작업물 보기 섹션 */}
+          {/* Hover 시 표시되는 작업물 보기 섹션 */}
           <div className="view-work-section">
             <a
               href={`/work/${school.schoolName.toLowerCase()}`}
