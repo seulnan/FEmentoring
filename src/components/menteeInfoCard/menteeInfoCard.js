@@ -73,7 +73,7 @@ export default function MenteeInfoCard({school}) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              작업물 보러가기
+              {school.schoolName}의 작업물 보러가기
             </a>
           </div>
         </div>

@@ -5,7 +5,7 @@
   position: relative; /* 작업물 보기 섹션 배치 */
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   transition: transform 0.3s ease-in-out;
 
   &:hover {
@@ -44,6 +44,26 @@
   }
 }
 
+.menteeInfo-card:hover + .menteeInfo-card-border {
+  border-color: $menteeInfoCardBorder;
+  width: 100%;
+  -webkit-transition: width 0.6s ease-in-out;
+  -moz-transition: width 0.6s ease-in-out;
+  -o-transition: width 0.6s ease-in-out;
+  transition: width 0.6s ease-in-out;
+}
+
+.menteeInfo-card-border {
+  height: 30px;
+  width: 80%;
+  border-top: 2px solid $lightBorder1;
+  margin-bottom: 20px;
+  -webkit-transition: width 0.6s ease-in-out;
+  -moz-transition: width 0.6s ease-in-out;
+  -o-transition: width 0.6s ease-in-out;
+  transition: width 0.6s ease-in-out;
+}
+
 /* 카드 내부 텍스트 스타일 */
 .menteeInfo-card-right {
   max-width: 70%;
@@ -60,7 +80,7 @@
   margin-top: 10px;
 
   .menteeInfo-text-subHeader {
-    color: $textColorDark;
+    color: $textColor;
     font-size: 18px;
     font-weight: bold;
     margin: 5px 0;
@@ -77,7 +97,8 @@
     margin-top: 10px;
   }
 
-  .menteeInfo-text-bullets {
+  .menteeInfo-text-bullets 
+  {
     margin-top: 10px;
 
     ul {
@@ -89,16 +110,15 @@
   }
 }
 
-/* 이미지 스타일 */
 .menteeInfo-roundedimg {
   object-fit: cover;
-  margin-right: 20px;
-  width: 80px;
-  height: 80px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-right: 2rem; /* 간격을 줄여 schoolName과 더 가깝게 */
+  width: 6rem;
+  height: 6rem;
+  box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
   border-radius: 50%;
+  align-self: flex-start; /* 이미지를 상단 정렬 */
 }
-
 /* 반응형 스타일 */
 @media (max-width: 1380px) {
   .menteeInfo-card {
