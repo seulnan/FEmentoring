@@ -8,7 +8,7 @@ import StartupProject from "./StartupProjects/StartupProject";
 import Achievement from "./achievement/Achievement";
 import Blogs from "./blogs/Blogs";
 import Footer from "../components/footer/Footer";
-import MenteeInfo from "./menteeInfo/menteeInfo";
+import MenteeInfo from "./menteeInfo/MenteeInfo";
 import ScrollToTopButton from "./topbutton/Top";
 import Profile from "./profile/Profile";
 import SplashScreen from "./splashScreen/SplashScreen";

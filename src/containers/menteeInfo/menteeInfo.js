@@ -1,5 +1,5 @@
 import React from "react";
-import "./menteeInfo.scss";
+import "./MenteeInfo.scss";
 import MenteeInfoCard from "../../components/menteeInfoCard/menteeInfoCard";
 import { menteeInfo } from "../../portfolio";
 
