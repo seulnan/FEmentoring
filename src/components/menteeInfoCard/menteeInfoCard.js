@@ -5,6 +5,7 @@ import StyleContext from "../../contexts/StyleContext";
 
 export default function MenteeInfoCard({school}) {
   const imgRef = createRef();
+  const {isDark} = useContext(StyleContext);
 
   const GetDescBullets = ({descBullets}) => {
     return descBullets
@@ -15,10 +16,13 @@ export default function MenteeInfoCard({school}) {
         ))
       : null;
   };
-  const {isDark} = useContext(StyleContext);
 
-  if (!school.logo)
-    console.error(`Image of ${school.name} is missing in menteeInfo section`);
+  if (!school.logo) {
+    console.error(
+      `Image of ${school.schoolName} is missing in menteeInfo section`
+    );
+  }
+
   return (
     <div>
       <Fade left duration={1000}>
@@ -26,7 +30,7 @@ export default function MenteeInfoCard({school}) {
           {school.logo && (
             <div className="menteeInfo-card-left">
               <img
-                crossOrigin={"anonymous"}
+                crossOrigin="anonymous"
                 ref={imgRef}
                 className="menteeInfo-roundedimg"
                 src={school.logo}
@@ -36,7 +40,6 @@ export default function MenteeInfoCard({school}) {
           )}
           <div className="menteeInfo-card-right">
             <h5 className="menteeInfo-text-school">{school.schoolName}</h5>
-
             <div className="menteeInfo-text-details">
               <h5
                 className={
@@ -61,6 +64,17 @@ export default function MenteeInfoCard({school}) {
                 </ul>
               </div>
             </div>
+          </div>
+
+          {/* 작업물 보기 섹션 */}
+          <div className="view-work-section">
+            <a
+              href={`/work/${school.schoolName.toLowerCase()}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              작업물 보러가기
+            </a>
           </div>
         </div>
       </Fade>

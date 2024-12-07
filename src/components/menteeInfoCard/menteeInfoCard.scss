@@ -1,134 +1,138 @@
 @import "../../_globalColor";
 
+// 기본 카드 스타일
 .menteeInfo-card {
+  position: relative; /* 작업물 보기 섹션 배치 */
   display: flex;
   flex-direction: row;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateX(-10px); /* 호버 시 왼쪽으로 이동 */
+  }
+
+  /* 카드 오른쪽 작업물 보기 섹션 */
+  .view-work-section {
+    position: absolute;
+    top: 50%;
+    right: -150px; /* 기본 위치: 카드 오른쪽 */
+    transform: translateY(-50%);
+    opacity: 0; /* 기본 숨김 */
+    background-color: $lightBackground1;
+    color: $buttonHover;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+
+    a {
+      text-decoration: none;
+      color: $buttonColor;
+      font-weight: bold;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  /* 호버 시 작업물 보기 섹션 활성화 */
+  &:hover .view-work-section {
+    opacity: 1;
+    right: 0; /* 카드와 같은 라인으로 이동 */
+  }
 }
 
-.menteeInfo-card:hover + .menteeInfo-card-border {
-  border-color: $menteeInfoCardBorder;
-  width: 100%;
-  -webkit-transition: width 0.6s ease-in-out;
-  -moz-transition: width 0.6s ease-in-out;
-  -o-transition: width 0.6s ease-in-out;
-  transition: width 0.6s ease-in-out;
-}
-
-.menteeInfo-card-border {
-  height: 30px;
-  width: 80%;
-  border-top: 2px solid $lightBorder1;
-  margin-bottom: 20px;
-  -webkit-transition: width 0.6s ease-in-out;
-  -moz-transition: width 0.6s ease-in-out;
-  -o-transition: width 0.6s ease-in-out;
-  transition: width 0.6s ease-in-out;
-}
-
-.menteeInfo-head {
-  display: flex;
-  flex-direction: row;
+/* 카드 내부 텍스트 스타일 */
+.menteeInfo-card-right {
+  max-width: 70%;
+  transition: opacity 0.3s ease-in-out; /* 호버 시 시각적 변경 */
 }
 
 .menteeInfo-text-school {
-  margin: 0;
   font-size: 28px;
-  font-weight: 700;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  height: 27px;
+  font-weight: bold;
+  margin: 0;
 }
 
+.menteeInfo-text-details {
+  margin-top: 10px;
+
+  .menteeInfo-text-subHeader {
+    color: $textColorDark;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+
+  .menteeInfo-text-duration {
+    color: $cardSubtitle;
+    font-size: 16px;
+    margin: 5px 0;
+  }
+
+  .menteeInfo-text-desc {
+    color: $talkCardSubTitle;
+    margin-top: 10px;
+  }
+
+  .menteeInfo-text-bullets {
+    margin-top: 10px;
+
+    ul {
+      padding-left: 20px;
+      li {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+/* 이미지 스타일 */
 .menteeInfo-roundedimg {
   object-fit: cover;
-  margin-right: 2rem;
-  width: 6rem;
-  height: 6rem;
-  box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
+  margin-right: 20px;
+  width: 80px;
+  height: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
 
-.menteeInfo-card-right {
-  max-width: 70%;
-}
-
-.menteeInfo-text-subHeader {
-  color: $textColor;
-  font-weight: 700;
-  font-size: 19px;
-  margin: 0px;
-  padding-top: 0.8rem;
-  line-height: normal;
-}
-
-.menteeInfo-text-duration {
-  color: $titleColor;
-  font-size: 19px;
-  margin: 0px;
-  padding-top: 0.5rem;
-}
-
-.menteeInfo-text-desc {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.menteeInfo-text-bullets > ul {
-  margin-top: 0.5rem;
-}
-
-/* Media Query */
-
+/* 반응형 스타일 */
 @media (max-width: 1380px) {
   .menteeInfo-card {
     flex-direction: column;
-    padding-bottom: 10px;
+    align-items: flex-start;
   }
-  .menteeInfo-card-right {
-    max-width: 90%;
-  }
-  .menteeInfo-card-border {
-    width: 90%;
-  }
-  .menteeInfo-text-subHeader {
-    padding-top: 0.5rem;
-    font-size: 16px;
-  }
-  .menteeInfo-text-school {
-    font-size: 20px;
-    height: 23px;
-  }
-  .menteeInfo-text-duration {
-    font-size: 16px;
-  }
+
   .menteeInfo-roundedimg {
-    width: 4rem;
-    height: 4rem;
-    margin-bottom: 0.5rem;
-    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .view-work-section {
+    right: -100px; /* 조금 더 가까이 */
   }
 }
 
 @media (max-width: 768px) {
   .menteeInfo-card {
     text-align: center;
+    align-items: center;
   }
-  .menteeInfo-card-right {
-    max-width: 100%;
-  }
-  .menteeInfo-card-border {
-    width: 100%;
-  }
+
   .menteeInfo-roundedimg {
-    margin-top: 10px;
-    width: 4rem;
-    height: 4rem;
-    margin-bottom: 1rem;
-    margin-right: 0;
+    width: 60px;
+    height: 60px;
   }
-  .menteeInfo-text-bullets > ul {
-    max-width: 80%;
-    margin: auto;
+
+  .view-work-section {
+    position: relative;
+    top: 10px;
+    right: 0;
+    transform: none; /* 모바일에서 중앙에 위치 */
+    opacity: 1;
+    margin-top: 10px;
   }
 }
